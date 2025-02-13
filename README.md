@@ -66,6 +66,21 @@ Here are some key metrics from the training process:
 - 🎉 **Best Average Reward**: 44.46
 - ⏱️ **Training Steps**: 31,000
 
+### Training Logs
+
+```
+Step 1000 | Avg Balance: 120.00 | Avg Reward: 0.22 (Improvement: inf%)
+Step 2000 | No improvement for 1/10 checks
+Step 3000 | No improvement for 2/10 checks
+...
+Step 15000 | Avg Balance: 837.20 | Avg Reward: 7.61 (Improvement: 365.11%)
+Step 16000 | Avg Balance: 4465.00 | Avg Reward: 43.65 (Improvement: 433.33%)
+...
+Step 31000 | No improvement for 10/10 checks
+Early stopping triggered! No improvement for 10 consecutive evaluations.
+Final model saved as 'final_model_4546.keras'
+```
+
 Check out the generated graphs for more insights:
 
 ![Training Progress](training_progress.png)
@@ -77,7 +92,7 @@ Check out the generated graphs for more insights:
 
 - <img src="https://img.icons8.com/color/48/000000/python.png" width="20" height="20"/> **Python**: The primary programming language.
 - <img src="https://img.icons8.com/color/48/000000/tensorflow.png" width="20" height="20"/> **TensorFlow**: For building and training the DQN.
-- <img src="https://img.icons8.com/color/48/000000/openai.png" width="20" height="20"/> **Gym**: For creating the custom gambling environment.
+- <img src="https://img.icons8.com/color/48/000000/openai-gym.png" width="20" height="20"/> **Gym**: For creating the custom gambling environment.
 - <img src="https://img.icons8.com/color/48/000000/artificial-intelligence.png" width="20" height="20"/> **Reinforcement Learning**: For training the agent.
 
 ---
@@ -104,4 +119,3 @@ This project is licensed under the MIT License. See the [LICENSE](LICENSE) file 
 <p align="center">
   Inspired by <a href="https://github.com/PowerisTsutsun">PowerisTsutsun's Discord bot</a>
 </p>
-
