@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Reinforced Gambler 🎰🤖</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <style>
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      line-height: 1.6;
+      margin: 0;
+      padding: 20px;
+      background-color: #0d1117;
+      color: #c9d1d9;
+      position: relative;
+      overflow-x: hidden; /* Prevent horizontal scrolling */
+    }
+    h1, h2, h3 {
+      color: #58a6ff;
+    }
+    a {
+      color: #58a6ff;
+      text-decoration: none;
+    }
+    a:hover {
+      text-decoration: underline;
+    }
+    .container {
+      max-width: 800px;
+      margin: 0 auto;
+      position: relative;
+      z-index: 1;
+    }
+    .header {
+      text-align: center;
+      padding: 20px 0;
+    }
+    .header h1 {
+      font-size: 2.5rem;
+      margin: 0;
+    }
+    .header p {
+      font-size: 1.2rem;
+      color: #8b949e;
+    }
+    .badges {
+      display: flex;
+      gap: 10px;
+      margin: 20px 0;
+      justify-content: center;
+    }
+    .badge {
+      padding: 5px 10px;
+      background-color: #238636;
+      color: white;
+      border-radius: 5px;
+      font-size: 0.9rem;
+    }
+    .emoji {
+      font-size: 1.2rem;
+    }
+    .section {
+      margin: 40px 0;
+    }
+    .section h2 {
+      font-size: 2rem;
+      border-bottom: 2px solid #30363d;
+      padding-bottom: 10px;
+    }
+    .section p {
+      font-size: 1.1rem;
+      color: #8b949e;
+    }
+    .footer {
+      text-align: center;
+      margin-top: 40px;
+      padding: 20px 0;
+      border-top: 2px solid #30363d;
+      color: #8b949e;
+    }
+    .star {
+      position: fixed; /* Use fixed positioning for stars */
+      width: 2px;
+      height: 2px;
+      background: white;
+      border-radius: 50%;
+      animation: fall linear infinite;
+      z-index: 0;
+    }
+    @keyframes fall {
+      from {
+        transform: translateY(-100vh);
+      }
+      to {
+        transform: translateY(100vh);
+      }
+    }
+  </style>
+</head>
+<body>
+  <!-- Starfall Background Effect -->
+  <div id="starfall"></div>
+
+  <!-- Main Content -->
+  <div class="container">
+    <div class="header">
+      <h1>Reinforced Gambler 🎰🤖</h1>
+      <p>A reinforcement learning algorithm designed to beat gambling scenarios. 🚀</p>
+      <div class="badges">
+        <span class="badge"><i class="fab fa-python"></i> Python</span>
+        <span class="badge"><i class="fas fa-brain"></i> TensorFlow</span>
+        <span class="badge"><i class="fas fa-dumbbell"></i> Gym</span>
+        <span class="badge"><i class="fas fa-robot"></i> Reinforcement Learning</span>
+      </div>
+    </div>
+
+    <div class="section">
+      <h2>📖 Project Overview</h2>
+      <p>
+        The <strong>Reinforced Gambler</strong> is a reinforcement learning agent trained to maximize its balance in a simulated gambling environment. It uses a <strong>Deep Q-Network (DQN)</strong> with <strong>prioritized experience replay</strong> and <strong>mixed precision training</strong> to learn the optimal strategy. The project includes <strong>early stopping</strong>, <strong>performance monitoring</strong>, and <strong>automatic graph generation</strong> for analyzing training progress.
+      </p>
+      <p>
+        This project was created as a prototype to compete against <a href="https://github.com/PowerisTsutsun" target="_blank">PowerisTsutsun's Discord bot</a>.
+      </p>
+    </div>
+
+    <div class="section">
+      <h2>🎯 Key Features</h2>
+      <ul>
+        <li>🚀 <strong>Deep Q-Network (DQN)</strong>: Learns optimal strategies for maximizing rewards.</li>
+        <li>📊 <strong>Prioritized Experience Replay</strong>: Improves learning efficiency by focusing on important experiences.</li>
+        <li>⏳ <strong>Early Stopping</strong>: Automatically stops training if performance plateaus.</li>
+        <li>📈 <strong>Graph Generation</strong>: Produces graphs for analyzing training progress.</li>
+        <li>🤖 <strong>Mixed Precision Training</strong>: Speeds up training on GPUs.</li>
+      </ul>
+    </div>
+
+    <div class="section">
+      <h2>📦 Installation</h2>
+      <p>To get started, clone the repository and install the dependencies:</p>
+      <pre><code>git clone https://github.com/Chungus1310/reinforced_gambler.git
+cd reinforced_gambler
+pip install -r requirements.txt</code></pre>
+    </div>
+
+    <div class="section">
+      <h2>🚀 Usage</h2>
+      <p>Train the agent by running the Jupyter Notebook:</p>
+      <pre><code>jupyter notebook training.ipynb</code></pre>
+      <p>Monitor training progress and view generated graphs:</p>
+      <ul>
+        <li><code>training_progress.png</code>: Overall training metrics.</li>
+        <li><code>rolling_metrics.png</code>: Smoothed trends using rolling averages.</li>
+      </ul>
+    </div>
+
+    <div class="section">
+      <h2>📊 Results</h2>
+      <p>Here are some key metrics from the training process:</p>
+      <ul>
+        <li>🏆 <strong>Best Balance Achieved</strong>: 4546.00</li>
+        <li>🎉 <strong>Best Average Reward</strong>: 44.46</li>
+        <li>⏱️ <strong>Training Steps</strong>: 31,000</li>
+      </ul>
+      <p>Check out the generated graphs for more insights:</p>
+      <img src="training_progress.png" alt="Training Progress" width="100%">
+      <img src="rolling_metrics.png" alt="Rolling Metrics" width="100%">
+    </div>
+
+    <div class="footer">
+      <p>Made with ❤️ by <a href="https://github.com/Chungus1310" target="_blank">Chungus1310</a></p>
+      <p>Inspired by <a href="https://github.com/PowerisTsutsun" target="_blank">PowerisTsutsun's Discord bot</a></p>
+    </div>
+  </div>
+
+  <!-- JavaScript for Starfall Effect -->
+  <script>
+    function createStar() {
+      const star = document.createElement('div');
+      star.classList.add('star');
+      star.style.left = `${Math.random() * 100}vw`;
+      star.style.animationDuration = `${Math.random() * 2 + 1}s`;
+      document.getElementById('starfall').appendChild(star);
+      setTimeout(() => star.remove(), 3000);
+    }
+
+    setInterval(createStar, 100);
+  </script>
+</body>
+</html>
